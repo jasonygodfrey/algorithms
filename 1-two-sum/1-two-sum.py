@@ -5,4 +5,4 @@ class Solution: #jun 27 22
                 if target == nums[i] + nums[j]:
                     return[i, j]
                 
-            #jun 27 22
+            #jun 27 22 test
