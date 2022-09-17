@@ -11,8 +11,7 @@ class Solution:
             R *= nums[i]
         return answer
 """ Here is the explanation for the code above:
-1. First we create the variables we need, namely max_profit to store the maximum profit we can get, and min_price to store the minimum price we have seen so far.
-2. Then we iterate through the prices array, at each index i.
-3. If we have seen a price lower than the current minimum price, we update the minimum price.
-4. Otherwise, we update the maximum profit we can get, by comparing the current maximum profit and the price at index i minus the current minimum price.
-5. Finally, we return the maximum profit we can get. """
+1. The answer array is used to store the product of all the numbers to the left of each index.
+2. R is used to store the product of all the numbers to the right of each index.
+3. We then iterate through the array in reverse order, and update answer[i] = answer[i] * R, where R would contain the product of all the numbers to the right of i.
+4. We update R = R * nums[i] to contain the product of all the numbers to the right of the current index. """
