@@ -8,3 +8,9 @@ class Solution:
             else:
                 result += roman[s[i]]
         return result
+
+    """ Here is the explanation for the code above:
+    1. First, we initialize a dictionary that maps each roman character to its corresponding integer value.
+    2. We initialize the result variable with 0.
+    3. We loop through the string and check if the current character is smaller than the next character. If it is, we subtract its value from the result. If it is not, we add its value to the result.
+    4. After we finish looping through the string, we return the result. """
