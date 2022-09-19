@@ -9,3 +9,6 @@ class Solution:
                 res += sym * count
                 num = num % val
         return res
+    """1. We store the symbols and their values in a list of lists.
+2. We iterate through the list from the end to the beginning, and for each symbol, we divide the given number by the value of the symbol. If the result is greater than zero, it means that the symbol is smaller than the given number. We add the symbol to the result string as many times as the quotient is, and update the number by taking the remainder of the division.
+3. We return the result string. """
