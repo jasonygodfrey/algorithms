@@ -25,3 +25,5 @@ class Solution:
 2. If we can't find such an element, we know that the array is already in descending order. In this case, we just reverse the array.
 3. If we can find such an element, we know that the array is not in descending order. In this case, we find the next larger element from the end of the array and swap it with the first element we found.
 4. Finally, we reverse the right part of the array, which is the part after the first element we found. """
+# time complexity: O(n) where n is the length of nums
+# space complexity: O(1) since we are doing the replacement in place
