@@ -26,3 +26,8 @@ class Solution:
                 else:
                     l = mid + 1
         return -1
+    """ Here is the explanation for the code above:
+1. Find the middle element
+2. If middle element is the target, return the index
+3. If left side of the middle is sorted, and target is in the left side, then search left side, otherwise search the right side
+4. If right side of the middle is sorted, and target is in the right side, then search right side, otherwise search the left side """
