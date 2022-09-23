@@ -21,7 +21,7 @@ class Solution:
 
 
 """ Here is the explanation for the code above:
-1. We start from the end of the list and check if the current element is greater than its predecessor. If it is, we have found our pivot which is the element just before the current element. Otherwise, we continue to the next element.
-2. If we have found our pivot, we start from the end of the list again and check if the current element is greater than our pivot. If it is, we have found our swap element which is the element just before the current element. Otherwise, we continue to the next element.
-3. We swap our pivot with our swap element and reverse the part of the list after our pivot.
-4. If we have not found our pivot, we reverse the entire list. """
+1. We find the first element, which is smaller than its next element from the end of the array.
+2. If we can't find such an element, we know that the array is already in descending order. In this case, we just reverse the array.
+3. If we can find such an element, we know that the array is not in descending order. In this case, we find the next larger element from the end of the array and swap it with the first element we found.
+4. Finally, we reverse the right part of the array, which is the part after the first element we found. """
