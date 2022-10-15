@@ -32,3 +32,5 @@ class Solution:
 5. We then advance the pointer of the list that we just appended.
 6. The while loop terminates when either l1 or l2 points to None.
 7. We then append the non-None list to the result list and return the result. """
+            #time complexity O(n+m) where n and m are the length of the two lists 
+        # space complexity O(1) since we are not using any extra space
