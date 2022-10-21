@@ -20,3 +20,7 @@ class Solution:
         if s and t and s.val == t.val:
             return (self.sameTree(s.left, t.left) and self.sameTree(s.right, t.right))
         return False
+
+
+        #time complexity O(m*n) where m is the number of nodes in s and n is the number of nodes in t
+        # space complexity O(n) where n is the number of nodes in t
